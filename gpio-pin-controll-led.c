@@ -39,6 +39,29 @@ void turn_on_led(uint pin) {
     turn_off_leds();
     gpio_put(pin, 1);
 }
+//ligar leds vermelho e verde
+void rg() {
+    turn_off_leds();
+    sleep_ms(10);
+    gpio_put(LED_RED, 1);
+    gpio_put(LED_GREEN, 1);
+}
+
+//ligar leds vermelho e azul
+void rb() {
+  turn_off_leds();
+  sleep_ms(10);
+  gpio_put(LED_RED, 1);
+  gpio_put(LED_BLUE, 1); 
+}
+
+//ligar leds verde e azul
+void gb() {
+    turn_off_leds();
+    sleep_ms(10);
+    gpio_put(LED_GREEN, 1);
+    gpio_put(LED_BLUE, 1); 
+}
 
 // Função para ligar todos os LEDs (luz branca)
 void turn_on_all_leds() {
@@ -83,7 +106,16 @@ int main() {
     char command = 'B';
 
     printf("Sistema iniciado. Aguardando comandos via UART...\n");
-
+    printf("Digite R para a cor vermelha\n");
+    printf("Digite B para a cor azul \n");
+    printf("Digite G para ligar o led verde \n");
+    printf("Digite Y para a cor amarela \n");
+    printf("Digite V para a cor violeta \n");
+    printf("Digite C para a cor ciano \n");
+    printf("Digite W para a cor branca\n");
+    printf("Digite O para desligar todos os leds \n");
+    printf("Digite Z para ligar o buzzer \n");
+    
     while (true) {
         // Aguarda um comando do usuário
             if (scanf("%c", &command) == 1) {
@@ -99,6 +131,18 @@ int main() {
                     case 'R':
                         printf("Ligando LED vermelho...\n");
                         turn_on_led(LED_RED);
+                        break;
+                    case 'Y':
+                        printf("Ligando led vermelho e verde\n");
+                        rg();
+                        break;
+                    case 'V':
+                        printf("Ligando led vermelho e azul\n");
+                        rb();
+                        break;
+                    case 'C':
+                        printf("Ligando led azul e verde\n");
+                        gb();
                         break;
                     case 'W':
                         printf("Ligando todos os LEDs (branco)...\n");
