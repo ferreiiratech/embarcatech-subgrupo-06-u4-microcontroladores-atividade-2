@@ -40,18 +40,27 @@
       "left": -106.15,
       "rotate": 90,
       "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-buzzer",
+      "id": "bz1",
+      "top": -7.2,
+      "left": 136.2,
+      "attrs": { "volume": "0.1" }
     }
   ],
   "connections": [
-    ["pico:GP0", "$serialMonitor:RX", "", []],
-    ["pico:GP1", "$serialMonitor:TX", "", []],
-    ["r1:1", "rgb1:R", "red", ["h0"]],
-    ["r1:2", "pico:GP13", "red", ["h0", "v18"]],
-    ["rgb1:COM", "pico:GND.4", "black", ["v0"]],
-    ["r2:1", "rgb1:G", "green", ["h0"]],
-    ["r2:2", "pico:GP11", "green", ["h0"]],
-    ["rgb1:B", "r3:1", "blue", ["v9.6", "h11.2"]],
-    ["r3:2", "pico:GP12", "blue", ["h0", "v27.6"]]
+    [ "pico:GP0", "$serialMonitor:RX", "", [] ],
+    [ "pico:GP1", "$serialMonitor:TX", "", [] ],
+    [ "r1:1", "rgb1:R", "red", [ "h0" ] ],
+    [ "r1:2", "pico:GP13", "red", [ "h0", "v18" ] ],
+    [ "rgb1:COM", "pico:GND.4", "black", [ "v0" ] ],
+    [ "r2:1", "rgb1:G", "green", [ "h0" ] ],
+    [ "r2:2", "pico:GP11", "green", [ "h0" ] ],
+    [ "rgb1:B", "r3:1", "blue", [ "v9.6", "h11.2" ] ],
+    [ "r3:2", "pico:GP12", "blue", [ "h0", "v27.6" ] ],
+    [ "bz1:2", "pico:GP21", "yellow", [  "v0" ] ],
+    [ "bz1:1", "pico:GND.6", "black", [ "v0" ] ]
   ],
   "serialMonitor": { "display": "terminal", "newline": "lf" },
   "dependencies": {}
