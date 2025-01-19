@@ -129,8 +129,9 @@ O vídeo demonstrando o funcionamento do projeto pode ser acessado [aqui]().
 - **Líder do Projeto**: [Seu Nome]  
 - **Desenvolvedores**:  
   - Yasmin Cordeiro de Souza Meira
-  - [Nome 2]  
+  - Nicole Rocha
   - [Nome 3]  
+  - [Nome 4]  
 
 
 ## Licença
