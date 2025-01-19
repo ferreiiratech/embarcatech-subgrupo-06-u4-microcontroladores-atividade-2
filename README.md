@@ -34,7 +34,7 @@ Este projeto utiliza a ferramenta educacional **BitDogLab** para o controle de p
    - **Comando 'Z'**: Ativa o buzzer por 2 segundos.
 
 3. Gerenciamento do Sistema:
-   - **Comando 'Q'**: Reinicia o sistema para habilitar o modo de gravação.
+   - **Comando 'Q'**: Sai do programa.
 
 ## Componentes Utilizados
 
