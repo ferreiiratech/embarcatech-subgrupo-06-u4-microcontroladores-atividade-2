@@ -62,3 +62,66 @@ void pwm_init_buzzer(uint pin) {
     // Iniciar o PWM no nível baixo
     pwm_set_gpio_level(pin, 0);
 }
+
+// Ativação do buzzer
+void beep_buzzer(uint duration, uint repetitions) {
+    uint slice_num = pwm_gpio_to_slice_num(BUZZER);
+    for (int i = 0; i < repetitions; i++) {
+        pwm_set_gpio_level(BUZZER, 2048);
+        sleep_ms(duration);
+        pwm_set_gpio_level(BUZZER, 0);
+        sleep_ms(100);
+    }
+}
+
+// Função principal
+int main() {
+    stdio_init_all();
+    setup_gpio();
+    pwm_init_buzzer(BUZZER);
+
+    char command = 'B';
+
+    printf("Sistema iniciado. Aguardando comandos via UART...\n");
+
+    while (true) {
+        // Aguarda um comando do usuário
+            if (scanf("%c", &command) == 1) {
+                switch (command) {
+                    case 'G':
+                        printf("Ligando LED verde...\n");
+                        turn_on_led(LED_GREEN);
+                        break;
+                    case 'B':
+                        printf("Ligando LED azul...\n");
+                        turn_on_led(LED_BLUE);
+                        break;
+                    case 'R':
+                        printf("Ligando LED vermelho...\n");
+                        turn_on_led(LED_RED);
+                        break;
+                    case 'W':
+                        printf("Ligando todos os LEDs (branco)...\n");
+                        turn_on_all_leds();
+                        break;
+                    case 'O':
+                        printf("Desligando todos os LEDs...\n");
+                        turn_off_leds();
+                        break;
+                    case 'Z':
+                        printf("Acionando buzzer...\n");
+                        beep_buzzer(2000, 1);
+                        break;
+                    case 'Q':
+                        printf("Saindo do programa...\n");
+                        reset_usb_boot(0, 0);
+                        return 0;
+                    default:
+                        printf("Comando desconhecido: %c\n", command);
+                        break;
+                }
+            }
+        }
+        sleep_ms(100);
+    return 0;
+}
