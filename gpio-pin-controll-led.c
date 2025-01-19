@@ -39,3 +39,10 @@ void turn_on_led(uint pin) {
     turn_off_leds();
     gpio_put(pin, 1);
 }
+
+// Função para ligar todos os LEDs (luz branca)
+void turn_on_all_leds() {
+    gpio_put(LED_RED, 1);
+    gpio_put(LED_GREEN, 1);
+    gpio_put(LED_BLUE, 1);
+}
