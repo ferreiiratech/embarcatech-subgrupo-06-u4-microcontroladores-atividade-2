@@ -130,7 +130,7 @@ O vídeo demonstrando o funcionamento do projeto pode ser acessado [aqui]().
 - **Desenvolvedores**:  
   - Yasmin Cordeiro de Souza Meira
   - Nicole Rocha
-  - [Nome 3]  
+  - João Felipe Teles Monte
   - [Nome 4]  
 
 
