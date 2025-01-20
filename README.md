@@ -170,7 +170,7 @@ O vídeo demonstrando o funcionamento do projeto pode ser acessado [aqui]().
   - Nicole Rocha
   - Arthur Saldanha Félix Ulisses  
   - João Felipe Teles Monte
-  - [Nome 4]  
+  - Atenilton Santos de Souza Júnior
 
 
 ## Licença
