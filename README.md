@@ -100,15 +100,16 @@ Este projeto utiliza a ferramenta educacional **BitDogLab** para o controle de p
 ## Testes
 
 ### **1. Acionamento Individual dos LEDs**
-
 - **Descrição:** Verificar o funcionamento individual dos LEDs RGB.
 - **Passos:**
   1. Envie o comando `G` via UART para ligar o LED verde.
   2. Envie o comando `B` via UART para ligar o LED azul.
   3. Envie o comando `R` via UART para ligar o LED vermelho.
+  4. Envie o comando `O` via UART para desligar todos os LEDs.
 - **Resultado Esperado:**
   - Cada LED deve acender conforme o comando recebido.
   - Apenas o LED correspondente ao comando deve estar aceso.
+  - Todos os LEDs devem apagar ao enviar o comando `O`.
 
 ---
 
