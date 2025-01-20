@@ -90,35 +90,45 @@ Este projeto utiliza a ferramenta educacional **BitDogLab** para o controle de p
 
 ## Testes
 
-### 1. Acionamento Individual dos LEDs
+### **1. Acionamento de Todos os LEDs Simultaneamente**
+- **Descrição:** Verificar o funcionamento dos LEDs RGB em conjunto.
+- **Passos:**
+  1. Envie o comando `W` via UART para acender todos os LEDs.
+- **Resultado Esperado:**
+  - Todos os LEDs devem acender simultaneamente, formando uma luz branca.
+  - Mensagem exibida: `Ligando todos os LEDs (branco)...`.
 
-**Descrição**: Verificar o funcionamento individual dos LEDs RGB.  
-**Passos**:  
-- Envie o comando `G` para ligar o LED verde.  
-- Envie o comando `B` para ligar o LED azul.  
-- Envie o comando `R` para ligar o LED vermelho.  
-**Resultado Esperado**: Cada LED deve acender conforme o comando recebido.
+---
 
-### 2. Acionamento de Todos os LEDs Simultaneamente
+### **2. Sair do Programa**
+- **Descrição:** Verificar se o programa encerra e reinicia no modo de gravação.
+- **Passos:**
+  1. Envie o comando `Q` via UART para encerrar o programa.
+- **Resultado Esperado:**
+  - O programa deve exibir a mensagem: `Saindo do programa...`.
+  - O sistema deve reiniciar no modo de gravação.
 
-**Descrição**: Verificar o funcionamento dos LEDs RGB em conjunto.  
-**Passos**:  
-- Envie o comando `W` para acender todos os LEDs.  
-**Resultado Esperado**: Todos os LEDs devem acender, formando uma luz branca.
+---
 
-### 3. Desligamento dos LEDs
+### **3. Acionamento do Buzzer**
+- **Descrição:** Verificar se o buzzer emite som corretamente.
+- **Passos:**
+  1. Envie o comando `Z` via UART para ativar o buzzer.
+- **Resultado Esperado:**
+  - O buzzer deve emitir som por 2 segundos.
+  - Mensagem exibida: `Acionando buzzer...`.
 
-**Descrição**: Verificar se todos os LEDs podem ser desligados.  
-**Passos**:  
-- Envie o comando `O` para desligar todos os LEDs.  
-**Resultado Esperado**: Todos os LEDs devem apagar.
+---
 
-### 4. Acionamento do Buzzer
-
-**Descrição**: Verificar se o buzzer emite som corretamente.  
-**Passos**:  
-- Envie o comando `Z` para ativar o buzzer.  
-**Resultado Esperado**: O buzzer deve emitir som por 2 segundos.
+### **4. Sair do Programa**
+- **Descrição:** Verificar se o programa encerra e reinicia no modo de gravação.
+- **Passos:**
+  1. Envie o comando `Q` via UART para encerrar o programa.
+- **Resultado Esperado:**
+  - O programa deve exibir a mensagem: `Saindo do programa...`.
+  - O sistema deve reiniciar no modo de gravação.
+ 
+---
 
 ## Vídeo Ensaio
 
@@ -130,7 +140,7 @@ O vídeo demonstrando o funcionamento do projeto pode ser acessado [aqui]().
 - **Desenvolvedores**:  
   - Yasmin Cordeiro de Souza Meira
   - Nicole Rocha
-  - [Nome 3]  
+  - Arthur Saldanha Félix Ulisses  
   - [Nome 4]  
 
 
