@@ -90,23 +90,24 @@ Este projeto utiliza a ferramenta educacional **BitDogLab** para o controle de p
 
 ## Testes
 
-### **1. Acionamento de Todos os LEDs Simultaneamente**
+### **1. Acionamento Individual dos LEDs**
+- **Descrição:** Verificar o funcionamento individual dos LEDs RGB.
+- **Passos:**
+  1. Envie o comando `G` via UART para ligar o LED verde.
+  2. Envie o comando `B` via UART para ligar o LED azul.
+  3. Envie o comando `R` via UART para ligar o LED vermelho.
+- **Resultado Esperado:**
+  - Cada LED deve acender conforme o comando recebido.
+  - Apenas o LED correspondente ao comando deve estar aceso.
+
+---
+
+### **2. Acionamento de Todos os LEDs Simultaneamente**
 - **Descrição:** Verificar o funcionamento dos LEDs RGB em conjunto.
 - **Passos:**
   1. Envie o comando `W` via UART para acender todos os LEDs.
 - **Resultado Esperado:**
   - Todos os LEDs devem acender simultaneamente, formando uma luz branca.
-  - Mensagem exibida: `Ligando todos os LEDs (branco)...`.
-
----
-
-### **2. Sair do Programa**
-- **Descrição:** Verificar se o programa encerra e reinicia no modo de gravação.
-- **Passos:**
-  1. Envie o comando `Q` via UART para encerrar o programa.
-- **Resultado Esperado:**
-  - O programa deve exibir a mensagem: `Saindo do programa...`.
-  - O sistema deve reiniciar no modo de gravação.
 
 ---
 
