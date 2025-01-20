@@ -164,13 +164,14 @@ O vídeo demonstrando o funcionamento do projeto pode ser acessado [aqui]().
 
 ## Formação da Equipe
 
-- **Líder do Projeto**: [Seu Nome]  
+- **Líder do Projeto**: Leonardo Ferreira  
 - **Desenvolvedores**:  
   - Yasmin Cordeiro de Souza Meira
   - Nicole Rocha
   - Arthur Saldanha Félix Ulisses  
   - João Felipe Teles Monte
   - Atenilton Santos de Souza Júnior
+  - Adão Thalisson Castro Guimarães
 
 
 ## Licença
