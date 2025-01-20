@@ -96,13 +96,16 @@ Este projeto utiliza a ferramenta educacional **BitDogLab** para o controle de p
   1. Envie o comando `G` via UART para ligar o LED verde.
   2. Envie o comando `B` via UART para ligar o LED azul.
   3. Envie o comando `R` via UART para ligar o LED vermelho.
-  4. Envia o comando `O` via UART para desligar o LED vermelho.
+  4. Envie o comando `O` via UART para desligar o LED vermelho.
 - **Resultado Esperado:**
   - Cada LED deve acender conforme o comando recebido.
   - Apenas o LED correspondente ao comando deve estar aceso.
 
-   **Teste no Hardware:**  
-  ![Teste LEDs Pisca (Hardware)](docs/leds.gif)
+  **Teste no Software:**  
+  ![Teste LEDs Individualmente (Software)](docs/video1.gif)  
+
+  **Teste no Hardware:**  
+  ![Teste LEDs Individualmente (Hardware)](docs/leds.gif)
 
 ---
 
@@ -110,12 +113,15 @@ Este projeto utiliza a ferramenta educacional **BitDogLab** para o controle de p
 - **Descrição:** Verificar o funcionamento dos LEDs RGB em conjunto.
 - **Passos:**
   1. Envie o comando `W` via UART para acender todos os LEDs.
-  2. Envia o comando `O` via UART para desligar todos os LEDs.
+  2. Envie o comando `O` via UART para desligar todos os LEDs.
 - **Resultado Esperado:**
   - Todos os LEDs devem acender simultaneamente, formando uma luz branca.
 
+  **Teste no Software:**  
+  ![Teste LEDs Simultâneos (Software)](docs/video2.gif)  
+
   **Teste no Hardware:**  
-  ![Teste LEDs Pisca (Hardware)](docs/white.gif)
+  ![Teste LEDs Simultâneos (Hardware)](docs/white.gif)
 
 ---
 
@@ -127,24 +133,30 @@ Este projeto utiliza a ferramenta educacional **BitDogLab** para o controle de p
   - O buzzer deve emitir som por 2 segundos.
   - Mensagem exibida: `Acionando buzzer...`.
 
+  **Teste no Software:**  
+  ![Teste do Buzzer (Software)](docs/video3.gif)  
+
   **Teste no Hardware:**  
-   O vídeo demonstrando o funcionamento do buzzer pode ser acessado [aqui](https://www.youtube.com/watch?v=C02Yh4xEFsM).
+  O vídeo demonstrando o funcionamento do buzzer pode ser acessado [aqui](https://www.youtube.com/watch?v=C02Yh4xEFsM).
+
 ---
 
 ### **4. Sair do Programa**
 - **Descrição:** Verificar se o programa encerra e reinicia no modo de gravação.
 - **Passos:**
   1. Envie o comando `B` via UART para ligar o LED azul.
-  2. Envia o comando `O` via UART para desligar o LED azul.
-  2. Envie o comando `Q` via UART para encerrar o programa.
+  2. Envie o comando `O` via UART para desligar o LED azul.
+  3. Envie o comando `Q` via UART para encerrar o programa.
 - **Resultado Esperado:**
   - O programa deve exibir a mensagem: `Saindo do programa...`.
   - O sistema deve reiniciar no modo de gravação.
 
+  **Teste no Software:**  
+  ![Teste Saída do Programa (Software)](docs/video4.gif)  
+
   **Teste no Hardware:**  
-  ![Teste LEDs Pisca (Hardware)](docs/finalizando.gif)
- 
----
+  ![Teste Saída do Programa (Hardware)](docs/finalizando.gif)
+
 
 ## Vídeo Ensaio
 
