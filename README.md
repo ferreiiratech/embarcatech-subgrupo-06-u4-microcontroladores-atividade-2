@@ -157,6 +157,7 @@ O vídeo demonstrando o funcionamento do projeto pode ser acessado [aqui]().
   - Yasmin Cordeiro de Souza Meira
   - Nicole Rocha
   - Arthur Saldanha Félix Ulisses  
+  - João Felipe Teles Monte
   - [Nome 4]  
 
 
